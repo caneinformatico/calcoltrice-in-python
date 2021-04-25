@@ -1,0 +1,49 @@
+while True:
+    print("""Ciao! Benvenuto in questa calcolatrice.""")
+    print("Qui sotto ci saranno tutti gli operatori e per usarli digita il simbolo che hanno tra parentesi, buondivertimento.")
+    print("-----------------------------")
+    print("Addizione (+)")
+    print("Sottrazione (-)")
+    print("Moltiplicazione (x)")
+    print("Divisione (:)")
+    print("Potenza (*)")
+    print('Se vuoi uscire digita "esci"')
+    print("-----------------------------")
+
+    operatore = input("Inserisci il simbolo dell'operatore che vuoi usare --> ")
+    if operatore == "+":
+        addendo1 = float(input("Inserisci il primo numero "))
+        addendo2 = float(input("Inserisci il secondo numero "))
+        somma = addendo1 + addendo2
+        print("Il risultato è " + str(somma))
+    elif operatore == "-":
+        minuendo = float(input("Inserisci il primo numero "))
+        sottraendo = float(input("Inserisci il secondo numero "))
+        differenza = minuendo - sottraendo
+        print("Il risultato è " + str(differenza))
+    elif operatore == "x":
+        moltiplicando = float(input("Inserisci il primo numero "))
+        moltiplicatore = float(input("Inserisci il secondo numero "))
+        prodotto = moltiplicando * moltiplicatore
+        print("Il risultato è " + str(prodotto))
+    elif operatore == ":":
+        dividendo = float(input("Inserisci il primo numero "))
+        divisore = float(input("Inserisci il secondo numero "))
+        quoziente = dividendo / divisore
+        print("Il risultato è " + str(quoziente))
+    elif operatore == "*":
+        base = float(input("Inserisci la base "))
+        esponente = float(input("Inserisci l'esponente "))
+        potenza = base ** esponente
+        print("Il risultato è " + str(potenza))
+    elif operatore == "esci":
+        print("Va bene, arrivederci!")
+        break
+    
+    riusare = input("Vuoi continuare ad usare la calcolatrice?  ")
+    if riusare == "Si" or riusare == "si":
+        continue
+    else:
+        print("Va bene, arrivederci!")
+        break
+
